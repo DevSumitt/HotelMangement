@@ -25,7 +25,10 @@ export default function Home() {
     console.log("test is working");
     console.log(response);
   }
-test();
+useEffect(()=>{
+  test();
+         
+})
     
     const handleSubmit = async (e) => {
     e.preventDefault();
