@@ -43,7 +43,7 @@ function Home() {
 
     const getRooms = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/get-rooms');
+            const response = await fetch('https://hotel-mangement-orcin.vercel.app/api/get-rooms');
             const result = await response.json();
             if (result.data) {
                 setRooms(result.data);
