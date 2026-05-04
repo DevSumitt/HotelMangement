@@ -20,7 +20,7 @@ export default function Home() {
   };
 
   const test = async ()=>{
-  const BASE_API = await fetch("https://hotelmangement.onrender.com/api/testing");
+  const BASE_API = await fetch("https://test-git-th91.onrender.com");
     const response = await BASE_API.json();
     console.log("test is working");
     console.log(response);
