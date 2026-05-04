@@ -22,7 +22,7 @@ app.use("/", studentroutes);
 
 
 app.get("/test",(req,res)=>{
-    res.json({"api is working....."})   
+    res.json({msg:"api is working....."})   
 })
 app.listen(process.env.PORT, () => {
     console.log("Server Is working on web", process.env.PORT);
