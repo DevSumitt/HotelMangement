@@ -10,6 +10,7 @@ const roomController = require('../controller/room-controller');
 const BookController = require('../controller/book-controller');
 const router = express.Router();
 
+router.get('/testing', EmployeController.Gettest);
 router.get('/Employerdetails', sessionAuth, EmployeController.GetEmploye);
 router.post('/Employerdetails/delete', EmployeController.DeleteEmploye);
 router.put('/Employerdetails', EmployeController.PutEmploye);
