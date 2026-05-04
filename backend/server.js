@@ -14,7 +14,7 @@ app = express()
 app.use(bodyParse.json());
 myDB();
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: "https://hotel-mangement-f8nr-o429lt6dj-devsumitts-projects.vercel.app",
     credentials: true
 }))
 app.use(sessioninfo);
