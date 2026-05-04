@@ -22,7 +22,7 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const BASE_API = "http://localhost:5000/api";
+      const BASE_API = "https://hotel-mangement-orcin.vercel.app/api";
       const response = await fetch(`${BASE_API}/logincustomer`, {
         method: "POST",
         credentials: "include",
