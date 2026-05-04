@@ -11,6 +11,10 @@ exports.GetEmploye = async (req, res) => {
         return res.status(500).json("Server Error")
     }
 }
+
+exports.Gettest = async(req,res)=>{
+return res.status(200).json({msg:"api work"})
+}
 exports.PostEmploye = async (req, res) => {
     const id = req.body.id;
     const name = req.body.name;
