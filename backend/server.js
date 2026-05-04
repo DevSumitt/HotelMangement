@@ -17,13 +17,14 @@ app.use(cors({
     origin: "https://hotel-mangement-f8nr-o429lt6dj-devsumitts-projects.vercel.app",
     credentials: true
 }))
+app.get("/test",(req,res)=>{
+    res.json({msg:"api is working....."})   
+})
 app.use(sessioninfo);
 app.use("/", studentroutes);
 
 
-app.get("/test",(req,res)=>{
-    res.json({msg:"api is working....."})   
-})
+
 app.listen(process.env.PORT, () => {
     console.log("Server Is working on web", process.env.PORT);
 })
