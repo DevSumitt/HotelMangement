@@ -19,7 +19,14 @@ export default function Home() {
     }, 3500);
   };
 
-  const handleSubmit = async (e) => {
+  const test = async ()=>{
+  const BASE_API = await fetch("https://hotelmangement.onrender.com/api/testing");
+    const response = await BASE_API.json();
+    console.log(response);
+  }
+
+    
+    const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const BASE_API = "https://hotelmangement.onrender.com/api";
