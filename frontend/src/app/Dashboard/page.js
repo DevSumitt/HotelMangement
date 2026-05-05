@@ -110,7 +110,7 @@ function Home() {
         };
 
         try {
-            const BASE_API = "http://localhost:5000/api";
+            const BASE_API = "https://hotelmangement-4.onrender.com/api";
             const response = await fetch(`${BASE_API}/book-now`, {
                 method: "POST",
                 headers: { 'Content-type': 'application/json' },
@@ -135,7 +135,7 @@ function Home() {
     };
 
     const logout = async () => {
-        const BASE_API = "http://localhost:5000/api";
+        const BASE_API = "https://hotelmangement-4.onrender.com/api";
         try {
             const data = await fetch(`${BASE_API}/logout-customer`, {
                 credentials: "include",
