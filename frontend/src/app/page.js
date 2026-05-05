@@ -19,21 +19,12 @@ export default function Home() {
     }, 3500);
   };
 
-  const test = async ()=>{
-  const BASE_API = await fetch("https://test-git-th91.onrender.com");
-    const response = await BASE_API.json();
-    console.log("test is working");
-    console.log(response);
-  }
-useEffect(()=>{
-  test();
-         
-})
+
     
     const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const BASE_API = "https://hotelmangement.onrender.com/api";
+      const BASE_API = "https://hotelmangement-4.onrender.com/api";
       const response = await fetch(`${BASE_API}/logincustomer`, {
         method: "POST",
         credentials: "include",
