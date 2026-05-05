@@ -57,7 +57,7 @@ function Home() {
     };
 
     const userInfo = async () => {
-        const BASE_API = "http://localhost:5000/api";
+        const BASE_API = "https://hotelmangement-4.onrender.com/api";
         try {
             const response = await fetch(`${BASE_API}/get-customerinfo`, {
                 method: "GET",
