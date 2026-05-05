@@ -32,7 +32,7 @@ function Home() {
 
     const deleteBooking = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/deleteBooking/${id}`, {
+            const response = await fetch(`https://hotelmangement-4.onrender.com/api/deleteBooking/${id}`, {
                 method: 'DELETE',
             });
             const result = await response.json();
