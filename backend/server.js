@@ -14,7 +14,7 @@ app = express()
 app.use(bodyParse.json());
 myDB();
 app.use(cors({
-    origin: true,
+    origin: "https://hotel-mangement-f8nr.vercel.app",
     credentials: true
 }))
 app.get("/test",(req,res)=>{
