@@ -43,7 +43,7 @@ function Home() {
 
     const getRooms = async () => {
         try {
-            const response = await fetch('https://hotelmangement-4.onrender.com/api/get-rooms',{
+            const response = await fetch('https://hotelmangement-5.onrender.com/api/get-rooms',{
              credentials: "include",
             });
             const result = await response.json();
@@ -59,7 +59,7 @@ function Home() {
     };
 
     const userInfo = async () => {
-        const BASE_API = "https://hotelmangement-4.onrender.com/api";
+        const BASE_API = "https://hotelmangement-5.onrender.com/api";
         try {
             const response = await fetch(`${BASE_API}/get-customerinfo`, {
                 method: "GET",
@@ -113,7 +113,7 @@ function Home() {
         };
 
         try {
-            const BASE_API = "https://hotelmangement-4.onrender.com/api";
+            const BASE_API = "https://hotelmangement-5.onrender.com/api";
             const response = await fetch(`${BASE_API}/book-now`, {
                 method: "POST",
                 headers: { 'Content-type': 'application/json' },
@@ -138,7 +138,7 @@ function Home() {
     };
 
     const logout = async () => {
-        const BASE_API = "https://hotelmangement-4.onrender.com/api";
+        const BASE_API = "https://hotelmangement-5.onrender.com/api";
         try {
             const data = await fetch(`${BASE_API}/logout-customer`, {
                 credentials: "include",
