@@ -43,7 +43,9 @@ function Home() {
 
     const getRooms = async () => {
         try {
-            const response = await fetch('https://hotelmangement-4.onrender.com/api/get-rooms');
+            const response = await fetch('https://hotelmangement-4.onrender.com/api/get-rooms',{
+             credentials: "include",
+            });
             const result = await response.json();
             if (result.data) {
                 setRooms(result.data);
@@ -70,7 +72,8 @@ function Home() {
                     email: result.data.Email || 'guest@example.com'
                 });
             } else {
-                router.push("/");
+                // router.push("/");
+                console.log(result)
             }
         } catch (err) {
             console.error("Error fetching user info:", err);
