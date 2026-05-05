@@ -22,7 +22,7 @@ function Home() {
 
     const Booknfo = async () => {
         try {
-            const response = await fetch('https://hotelmangement-4.onrender.com/api/getBooking-info');
+            const response = await fetch('https://hotelmangement-5.onrender.com/api/getBooking-info');
             const result = await response.json();
             setBookings(result.data || result);
         } catch (err) {
@@ -32,7 +32,7 @@ function Home() {
 
     const deleteBooking = async (id) => {
         try {
-            const response = await fetch(`https://hotelmangement-4.onrender.com/api/deleteBooking/${id}`, {
+            const response = await fetch(`https://hotelmangement-5.onrender.com/api/deleteBooking/${id}`, {
                 method: 'DELETE',
             });
             const result = await response.json();
@@ -50,7 +50,7 @@ function Home() {
         }
     };
     const userInfo = async () => {
-        const BASE_API = "https://hotelmangement-4.onrender.com/api";
+        const BASE_API = "https://hotelmangement-5.onrender.com/api";
         try {
             const response = await fetch(`${BASE_API}/get-customerinfo`, {
                 method: "GET",
