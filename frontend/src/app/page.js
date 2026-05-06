@@ -36,9 +36,9 @@ export default function Home() {
       if (response.ok && result.msg === "Login Sucessfully") {
         showToast("Login Successful!", "success");
         
-        // 3. 2 second baad redirect karein
+      
         setTimeout(() => {
-          router.push("/Dashboard"); // Aapka destination path yahan aayega
+          router.push("/Dashboard"); 
         }, 2000);
 
       } else {
