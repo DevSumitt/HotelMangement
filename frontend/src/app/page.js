@@ -24,7 +24,7 @@ export default function Home() {
     const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const BASE_API = "https://hotelmangement-6.onrender.com/api";
+      const BASE_API = "https://hotelmangement.onrender.com/api";
       const response = await fetch(`${BASE_API}/logincustomer`, {
         method: "POST",
         credentials: "include",
