@@ -72,8 +72,8 @@ function Home() {
                     email: result.data.Email || 'guest@example.com'
                 });
             } else {
-                // router.push("/");
-                console.log(result)
+                router.push("/");
+                // console.log(result)
             }
         } catch (err) {
             console.error("Error fetching user info:", err);
