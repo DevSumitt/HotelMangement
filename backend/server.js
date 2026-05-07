@@ -23,11 +23,7 @@ app.use(sessioninfo);
 
 // Routes
 app.get("/test", (req, res) => {
-    res.json({ msg: "api is working.....", success:true, data:{
-        name:"sumit",
-        age: 20,
-        liveIn : "delhi"
-    } });
+    res.json({ msg: "api is working....."});
 });
 
 app.use("/", studentroutes);
