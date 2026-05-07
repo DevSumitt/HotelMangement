@@ -119,7 +119,7 @@ function Home() {
                                         <td className={style.td}>{booking.checkin || 'N/A'}</td>
                                         <td className={style.td}>{booking.checkout || 'N/A'}</td>
                                         <td className={style.td}>₹{booking.totalAmount || '0'}</td>
-                                        <td className={style.td}>{booking.guests || '1'}</td>
+                                        <td className={style.td}>{booking.guest || '1'}</td>
                                         <td className={style.td}>
                                             <button
                                                 className={style.deletebtn}
