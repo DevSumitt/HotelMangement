@@ -16,7 +16,7 @@ myDB();
 
 app.use(express.json()); 
 app.use(cors({
-    origin: true,
+    origin: "https://hotel-mangement-lake.vercel.app",
     credentials: true
 }));
 app.use(sessioninfo);
