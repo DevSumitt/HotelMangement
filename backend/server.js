@@ -11,7 +11,7 @@ const studentroutes = require('./routes/employe-routes');
 const sessioninfo = require("./config/session");
 
 const app = express();
-
+app.set('trust proxy',1)
 myDB();
 
 app.use(express.json()); 
